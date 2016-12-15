@@ -1,0 +1,6 @@
+SELECT * 
+FROM imagen_catalogo imc,detalle_catalogo_productos dcp, oferta of
+WHERE imc.Detalle_Catalogo_Productos_Producto_idProducto=dcp.Producto_idProducto
+AND imc.Detalle_Catalogo_Productos_Catalogo_idCatalogo=dcp.Catalogo_idCatalogo
+AND dcp.Oferta_idOferta=of.idOferta
+AND dcp.Catalogo_idCatalogo=1
